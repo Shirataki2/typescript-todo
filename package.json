@@ -1,0 +1,22 @@
+{
+  "name": "typescript-todo",
+  "version": "1.0.0",
+  "description": "My terrific Nuxt.js project",
+  "author": "Kokolab",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "ts-node": "^8.3.0",
+    "vue-property-decorator": "^8.2.1"
+  },
+  "devDependencies": {
+    "@nuxt/typescript": "^2.8.1",
+    "@nuxtjs/vuetify": "^1.0.0"
+  }
+}
