@@ -24,7 +24,7 @@
     "webpack": "^4.0.0"
   },
   "devDependencies": {
-    "@nuxt/typescript": "^2.8.1",
+    "@nuxt/typescript-build": "^0.1.11",
     "@nuxtjs/vuetify": "^1.0.0",
     "@types/uuid": "^3.4.5",
     "vuex-guardian": "^0.0.2"
