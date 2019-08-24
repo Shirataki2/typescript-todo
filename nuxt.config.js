@@ -1,5 +1,14 @@
 import colors from "vuetify/es5/util/colors";
 
+const routerBase =
+  process.env.DEPLOY_ENV === "GH_PAGES"
+    ? {
+        router: {
+          base: "/refactored-octo-guacamole/"
+        }
+      }
+    : {};
+
 export default {
   mode: "universal",
   /*
@@ -34,11 +43,11 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxt/typescript-build", "@nuxtjs/vuetify"],
+  buildModules: ["@nuxt/typescript-build"],
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ["@nuxtjs/vuetify"],
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
@@ -72,5 +81,6 @@ export default {
   typescript: {
     typeCheck: true,
     ignoreNotFoundWarnings: true
-  }
+  },
+  ...routerBase
 };
