@@ -8,20 +8,25 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "codegen": "vuex-guardian"
   },
   "dependencies": {
     "nuxt": "^2.0.0",
     "ts-node": "^8.3.0",
     "typescript": "^3.5.3",
+    "uuid": "^3.3.2",
     "vue-class-component": "^7.0.0",
     "vue-property-decorator": "^8.2.1",
     "vue-template-compiler": "^2.5.0",
+    "vuex": "git+https://github.com/takefumi-yoshii/vuex.git",
     "vuex-class": "^0.3.2",
     "webpack": "^4.0.0"
   },
   "devDependencies": {
     "@nuxt/typescript": "^2.8.1",
-    "@nuxtjs/vuetify": "^1.0.0"
+    "@nuxtjs/vuetify": "^1.0.0",
+    "@types/uuid": "^3.4.5",
+    "vuex-guardian": "^0.0.2"
   }
 }
